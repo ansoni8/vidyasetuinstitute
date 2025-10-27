@@ -133,7 +133,7 @@ function ContactForm({ onSuccess }: ContactFormProps) {
             email: email,
             message: message,
             // You can add special formsubmit fields here if needed
-            // _subject: "New Contact Form Submission!",
+            _subject: "New Submission from VidyaSetu Website!",
           }),
         },
       );
@@ -337,4 +337,5 @@ export default function App() {
     </main>
   );
 }
+
 
