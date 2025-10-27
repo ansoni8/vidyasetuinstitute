@@ -111,7 +111,8 @@ function ContactForm({ onSuccess }: ContactFormProps) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState(null);
+  // 5. FIX: Explicitly type the state to be 'string' OR 'null'
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => { // Added type for 'e'
     e.preventDefault();
@@ -149,10 +150,10 @@ function ContactForm({ onSuccess }: ContactFormProps) {
       // It's better to check if err is an Error instance
       if (err instanceof Error) {
         console.error(err); // Log the full error
-        setError(err.message);
+        setError(err.message); // This is now valid (string)
       } else {
         setError(
-          'Something went wrong. Please check your connection and try again.',
+          'Something went wrong. Please check your connection and try again.', // This is now valid (string)
         );
       }
     } finally {
