@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="bg-[#F8FAFD] text-[#111827]">
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pt-[90px]">{children}</main>
         <Footer />
       </body>
     </html>

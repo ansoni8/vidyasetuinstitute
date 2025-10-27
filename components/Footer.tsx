@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -49,8 +50,8 @@ export default function Footer() {
                     <h3 className="font-semibold text-xl">Quick Links</h3>
                     <ul className="space-y-2 text-gray-700">
                         <li className="hover:text-[#0084FF] cursor-pointer transition">Home</li>
-                        <li className="hover:text-[#0084FF] cursor-pointer transition">About</li>
-                        <li className="hover:text-[#0084FF] cursor-pointer transition">Courses</li>
+                        <li><Link href="/about" className="hover:text-[#0085FF] transition">About</Link></li>
+                        <li><Link href="/courses" className="hover:text-[#0084FF] transition">Courses</Link></li>
                         <li className="hover:text-[#0084FF] cursor-pointer transition">Privacy Policy</li>
                     </ul>
                 </div>
