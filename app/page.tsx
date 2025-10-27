@@ -14,8 +14,8 @@ export default function Home() {
       transition={{ duration: 0.5 }}
     >
       <HeroSection />
-      <About />
       <Courses />
+      <About />
     </motion.div>
   );
 }
