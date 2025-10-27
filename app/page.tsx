@@ -3,6 +3,7 @@
 import HeroSection from "../components/HeroSection";
 import About from "./about/page";
 import Courses from "./courses/page";
+import Contact from "./contact/page";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <Courses />
       <About />
+      <Contact/>
     </motion.div>
   );
 }

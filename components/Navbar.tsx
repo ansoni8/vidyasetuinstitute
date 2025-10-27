@@ -64,6 +64,7 @@ export default function Navbar() {
                     <li><Link href="/" className="hover:text-[#0084FF] transition">Home</Link></li>
                     <li><Link href="/courses" className="hover:text-[#0084FF] transition">Courses</Link></li>
                     <li><Link href="/about" className="hover:text-[#0085FF] transition">About</Link></li>
+                    <li><Link href="/contact" className="hover:text-[#0085FF] transition">Contact us</Link></li>
                     
                     {/* **Updated: Desktop Pay Now Button** */}
                     <li>
